@@ -45278,9 +45278,9 @@ const or = async (u, e) => {
     zt = 21116,
     pa = "rs-ny.rustdesk.com";
 function Dr() {
-    const u = window.location.host;
+    const u = pa;
     if (u.indexOf("rustdesk.com") >= 0) return pa;
-    if (window.location.host.indexOf("localhost:") == 0) return "rs-ny.rustdesk.com";
+    if (window.location.host.indexOf("localhost:") == 0) return "127.0.0.1";
     const e = u.split(":");
     return e.length > 1 ? e[0] + ":" + (parseInt(e[1]) + 2) : u;
 }
